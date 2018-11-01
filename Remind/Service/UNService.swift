@@ -34,6 +34,27 @@ class UNService: NSObject{
         UNCentre.delegate = self
     }
     
+    func getAttachment(for id: NotificationAttachmentID) -> UNNotificationAttachment? {
+        
+        var image: String
+        switch id{
+            
+        case .timer : image = "TimeAlert"
+        case .date: image = "DateAlert"
+        case .location: image = "LocationAlert"
+        }
+        
+        guard let url = Bundle.main.url(forResource: image, withExtension: "png") else {return nil}
+        
+        do{
+            let attachment = try UNNotificationAttachment(identifier: id.rawValue, url: url)
+            return attachment
+        } catch{
+            return nil
+        }
+       
+    }
+    
     func timerRequest(interval: TimeInterval) {
         
         let content = UNMutableNotificationContent()
@@ -41,6 +62,10 @@ class UNService: NSObject{
         content.body = "Your timer is all done. YAY!"
         content.sound = .default
         content.badge = 1
+        
+        if let attachment = getAttachment(for: .timer){
+            content.attachments = [attachment]
+        }
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: interval, repeats: false)
         let request = UNNotificationRequest(identifier: "usernotification.Timer", content: content, trigger: trigger)
@@ -56,6 +81,10 @@ class UNService: NSObject{
         content.sound = .default
         content.badge = 1
         
+        if let attachment = getAttachment(for: .date){
+            content.attachments = [attachment]
+        }
+        
         let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: false)
         let request = UNNotificationRequest(identifier: "userNotification.Date", content: content, trigger: trigger)
         
@@ -64,6 +93,18 @@ class UNService: NSObject{
     
     func locationRequest(){
         
+        let content = UNMutableNotificationContent()
+        content.title = "Location Trigger"
+        content.body = "Welcome Back!"
+        content.sound = .default
+        content.badge = 1
+        
+        if let attachment = getAttachment(for: .location){
+            content.attachments = [attachment]
+        }
+        
+        let request = UNNotificationRequest(identifier: "userNotification.Location", content: content, trigger: nil)
+        UNCentre.add(request)
     }
 }
 

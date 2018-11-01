@@ -18,6 +18,8 @@
 		183967BE218820A5007D0D4E /* TimeAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = 183967BD218820A5007D0D4E /* TimeAlert.png */; };
 		183967C021882B5B007D0D4E /* UNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183967BF21882B5B007D0D4E /* UNService.swift */; };
 		18645F4E218AE28000B398B0 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18645F4D218AE28000B398B0 /* AlertService.swift */; };
+		18645F50218B53AD00B398B0 /* CLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18645F4F218B53AD00B398B0 /* CLService.swift */; };
+		18645F52218B667600B398B0 /* NotificationAttachmentID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18645F51218B667600B398B0 /* NotificationAttachmentID.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		183967BD218820A5007D0D4E /* TimeAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimeAlert.png; sourceTree = "<group>"; };
 		183967BF21882B5B007D0D4E /* UNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNService.swift; sourceTree = "<group>"; };
 		18645F4D218AE28000B398B0 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		18645F4F218B53AD00B398B0 /* CLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLService.swift; sourceTree = "<group>"; };
+		18645F51218B667600B398B0 /* NotificationAttachmentID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAttachmentID.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			children = (
 				183967BF21882B5B007D0D4E /* UNService.swift */,
 				18645F4D218AE28000B398B0 /* AlertService.swift */,
+				18645F4F218B53AD00B398B0 /* CLService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 		183967B5218819AA007D0D4E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				18645F51218B667600B398B0 /* NotificationAttachmentID.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -196,6 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18645F52218B667600B398B0 /* NotificationAttachmentID.swift in Sources */,
+				18645F50218B53AD00B398B0 /* CLService.swift in Sources */,
 				183967B721881AD5007D0D4E /* ShadowView.swift in Sources */,
 				183967A321881977007D0D4E /* ViewController.swift in Sources */,
 				183967C021882B5B007D0D4E /* UNService.swift in Sources */,
