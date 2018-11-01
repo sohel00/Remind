@@ -17,6 +17,7 @@
 		183967BC21882099007D0D4E /* LocationAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = 183967BB21882099007D0D4E /* LocationAlert.png */; };
 		183967BE218820A5007D0D4E /* TimeAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = 183967BD218820A5007D0D4E /* TimeAlert.png */; };
 		183967C021882B5B007D0D4E /* UNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183967BF21882B5B007D0D4E /* UNService.swift */; };
+		18645F4E218AE28000B398B0 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18645F4D218AE28000B398B0 /* AlertService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		183967BB21882099007D0D4E /* LocationAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocationAlert.png; sourceTree = "<group>"; };
 		183967BD218820A5007D0D4E /* TimeAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimeAlert.png; sourceTree = "<group>"; };
 		183967BF21882B5B007D0D4E /* UNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNService.swift; sourceTree = "<group>"; };
+		18645F4D218AE28000B398B0 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				183967BF21882B5B007D0D4E /* UNService.swift */,
+				18645F4D218AE28000B398B0 /* AlertService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				183967A321881977007D0D4E /* ViewController.swift in Sources */,
 				183967C021882B5B007D0D4E /* UNService.swift in Sources */,
 				183967A121881977007D0D4E /* AppDelegate.swift in Sources */,
+				18645F4E218AE28000B398B0 /* AlertService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
